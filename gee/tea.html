@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beverages</title>
+    <link rel="stylesheet" href="tea.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1>Beverages</h1>
+        <div class="container">
+        <input type="radio" name="drink" value="tea" id="tea">Tea<br>
+        <input type="radio" name="drink" value="coffee" id="coffee">Coffee<br>
+        <input type="radio" name="drink" value="lemontea" id="lemontea">Lemon Tea<br>
+        <input type="radio" name="drink" value="coldcoffee" id="coldcoffee">Cold Coffee<br>
+        <input type="radio" name="drink" value="badammilk" id="badammilk">Badam Milk<br>
+        <button onclick="addDrink()">Add</button><br>      
+        <button onclick="calculateTotal()">Total</button>
+        <p>Tea Count: <span id="teaCount">0</span></p>
+        <p>Coffee Count: <span id="coffeeCount">0</span></p>
+        <p>Lemon Tea Count: <span id="lemonteaCount">0</span></p>
+        <p>Cold Coffee Count: <span id="coldcoffeeCount">0</span></p>
+        <p>Badam Milk Count: <span id="badammilkCount">0</span></p>
+        <p>Total: <span id="bill">0.00</span></p>
+    </div>
+
+    <script src="tea.js"></script>
+</body>
+</html>

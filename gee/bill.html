@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="aa">
+    <link rel="stylesheet" href="bill.css">
+    <h1><center>BEVERAGES</center></h1>
+    <input type="radio" id="tea">
+    <label for="">tea</label>
+    <input type="radio" id="coffee">
+    <label for="">coffee</label>
+    <input type="radio" id="cold coffee">
+    <label for="">cold coffee</label>
+    <input type="radio" id="lemon tea">
+    <label for="">lemon tea</label>
+    <input type="submit">
+    </div>
+    <script>
+        function drink()
+        {
+            const selectedDrink = document.querySelector('input[name="drink"]:checked');
+            if(selectedDrink)
+            {
+                const drinkType = selectedDrink.value;
+                if(drinkType ==="tea")
+                {
+                    teaCount++;
+                    document.getElementById('teaCount').textContent = teaCount;
+                }
+                elseif(drinkType ==="coffee")
+                {
+                    teaCount++;
+                    document.getElementById('coffeeCount').textContent = coffeeCount;
+                }
+                elseif(drinkType ==="coldcoffee")
+                {
+                    teaCount++;
+                    document.getElementById('coldcoffeeCount').textContent = coldcoffeeCount;
+                }
+                elseif(drinkType ==="lemontea")
+                {
+                    teaCount++;
+                    document.getElementById('lemonteaCount').textContent = lemonteaCount;
+                }
+            }
+        }
+       
+
+
+    </script>
+    
+
+
+    
+</body>
+</html>

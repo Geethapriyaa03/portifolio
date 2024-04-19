@@ -1,0 +1,46 @@
+img{
+    width:200px;
+    height:200px;}
+
+.img1{
+    margin-left: 200px;
+    margin-top: 300px;
+    background-color: blue;
+}
+.img2{
+    padding-left: 200px;
+    padding-right: 300px;
+    background-color: blue;
+}
+.img1{
+    transition: 0.5s;
+}
+.img1:hover{
+    padding:50px;
+    background-color: blueviolet;
+
+}
+.img2{
+    transition: 0.5s;
+    width: 100px;
+    height: 200px;
+}
+.img2:hover{
+    padding: 50px;
+    width: 60px;
+    height: 50px;
+    background-color: darkolivegreen;
+}
+
+body{
+    background: linear-gradient(to top, violet,black,red);
+
+}
+.img1:hover{
+    padding: 50px;
+    background-color: aqua(19,172,19);
+    opacity: 2%;
+}
+body{
+    background-image: url('gee.jpg');
+}

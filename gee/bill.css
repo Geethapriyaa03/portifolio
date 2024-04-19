@@ -1,0 +1,14 @@
+body{
+    background-image: url('bill.jpg');
+    background-size: 100%;
+    backdrop-filter: blur(100px);
+    width: 50%;
+    margin-left: 350px;
+}
+
+#aa{
+    width:500px;
+    height:300px;
+    margin: auto;
+    text-align: center;
+}

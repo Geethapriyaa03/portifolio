@@ -1,0 +1,12 @@
+body{
+    background-image: url('gee.jpg');
+    background-size: 100%;
+}
+form{
+    text-align: center;
+}
+.h1{
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 25px;
+}

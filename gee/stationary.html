@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beverages</title>
+</head>
+<body>
+    <div class="container">
+        <input type="radio" name="drink" value="tea" id="tea">tea<br>
+        <input type="radio" name="drink" value="coffee" id="coffee">coffee<br>
+        <input type="radio" name="drink" value="lemontea" id="lemontea">lemontea<br>
+        <input type="radio" name="drink" value="coldcoffee" id="coldcoffee">coldcoffee<br>
+        <input type="radio" name="drink" value="badammilk" id="badammilk">badammilk<br>
+        <button onclick="Add()">Add</button><br>      
+        <button onclick="Total()">Total</button>
+        <p>teaCount : <span id = "teaCount">0</span></p>
+        <p>coffeeCount : <span id = "coffeeCount">0</span></p>
+        <p>lemonteaCount : <span id = "lemonteCount">0</span></p>
+        <p>coldcoffeeCount : <span id = "coldcoffeeCount">0</span></p>
+        <p>badammilkCount : <span id = "badammilkCount">0</span></p>
+        <p>Total: <span id = "bill">0</span></p>
+        <script>
+            let teaCount=0;
+            let coffeeCount=0;
+            let lemonteaCount=0;
+            let coldcoffeeCount=0;
+            let badammilkCount=0;
+
+            let tearate=10;
+            let coffeerate=15;
+            let lemontearate=30;
+            let coldcoffeerate=30;
+            let badammilkrate=20;
+
+                 function Add()
+                 {
+
+                    const selectedDrink = document.querySelector( 'input[name="drink"]:checked').value;
+                    if(selectedDrink)
+                    {
+                        const drinktype=selectedDrink.value;
+                    if(selectedDrink ==='tea')
+                    {
+                        //const drinktype = selectedDrink.value;
+                        teaCount++
+                        document.getElementById('teaCount').textContent ="teaCount:"+ teacount;
+                    }
+                    else if(selectedDrink ==='coffee')
+                    {
+                        //const drinktype = selectedDrink.value;
+                        coffeeCount++
+                        document.getElementById('coffeeCount').textContent = "coffeeCount:"+coffeecount;
+    
+                    }
+                    else if(selectedDrink ==='lemontea')
+                    {
+                        //const drinktype = selectedDrink.value;
+                        lemonteaCount++
+                        document.getElementById('lemonteaCount').textContent = "lemonteaCount:"+lemonteaCount;
+                    }
+                    
+                    else if(selectedDrink ==='coldcoffee')
+                    {
+                        //const drinktype = selectedDrink.value;
+                        coldcoffeeCount++
+                        document.getElementById('coldcoffeeCount').textContent = "coldcoffeeCount:"+coldcoffeeCount;
+                    }
+                    else if(selectedDrink ==='badammilk')
+                    {
+                        //const drinktype = selectedDrink.value;
+                        badammilkCount++
+                        document.getElementById('badammilkCount').textContent ="badammilkcount:"+ badammilkCount;
+                    }
+                }
+            }
+
+                function Total()
+                {
+                    total+=parseInt(document.getElementById("teacount").textContent)*tearate;
+                    total+=parseInt(document.getElementById("coffeecount").textContent)*coffeerate;
+                    total+=parseInt(document.getElementById("lemonteacount").textContent)*lemontearate;
+                    total+=parseInt(document.getElementById("coldcoffeecount").textContent)*coldcoffeerate;
+                    total+=parseInt(document.getElementById("badammilkcount").textContent)*badammilkrate;
+
+                    document.getElementById("bill").textContent = total;
+                }
+                
+                
+                
+                
+        
+        
+
+
+
+        
+        
+        </script>
+        
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+body{
+    background-image: url(./pk.avif );
+    background-size: 100%;
+    
+}
+#gee{
+    text-align: center;
+    backdrop-filter: blur(500px) ;
+    background-color: burlywood;
+}

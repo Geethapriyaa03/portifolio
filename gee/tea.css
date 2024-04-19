@@ -1,0 +1,10 @@
+body
+{
+    text-align: center; 
+    background-image: url(tea.jpg);
+    backdrop-filter: blur(500px);
+    margin-left: 500px;
+    margin-right: 500px;
+    color: beige;
+    
+}
